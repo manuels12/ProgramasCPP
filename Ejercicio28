@@ -1,0 +1,28 @@
+#include <iostream>
+
+#include <math.h>
+
+using namespace std;
+
+int main() {
+  int num = 1;
+  int reserva = 0;
+  int i = 0;
+
+  do {
+    if ((num % 2) != 0) {
+
+      reserva = reserva + pow(num, 2);
+      i++;
+      num++;
+
+    } else {
+      num++;
+    }
+
+  } while (num != 1001);
+
+  cout << "La suma de las potencias es :" << reserva << endl;
+
+  return 0;
+}
