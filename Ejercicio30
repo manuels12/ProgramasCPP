@@ -1,0 +1,22 @@
+#include <iostream>
+
+#include <math.h>
+
+using namespace std;
+
+int main() {
+  int libra = 0;
+  double cambio = 2.8;
+  double centavos = 0;
+  double dolares = 0;
+
+  cin >> libra;
+
+  dolares = cambio * libra;
+  centavos = dolares * 100;
+
+  cout << "Tu conversión a Dolares es: " << dolares << endl;
+  cout << "Tu conversión a centavos es: " << centavos << endl;
+
+  return 0;
+}
