@@ -1,0 +1,25 @@
+#include <iostream>
+
+#include <math.h>
+
+using namespace std;
+
+int main() {
+  int numero = 1;
+  int sum = 0;
+  int r = 0;
+  
+  cout << endl;
+  
+  do {
+    sum = sum + numero;
+    numero++;
+    r++;
+  } 
+  
+  while (r != 1000);
+  cout << endl;
+  cout << endl;
+  cout << "La suma de enteros del 1 al 1000 es: " << sum << endl;
+  return 0;
+}
