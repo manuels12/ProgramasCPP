@@ -1,0 +1,31 @@
+#include <iostream>
+
+#include <math.h>
+
+using namespace std;
+
+int main() {
+  int num = 100;
+  int k = 0;
+
+  do {
+
+    while (k != 5 && num < 121) {
+      cout << pow(num, 2);
+      num++;
+      k++;
+
+      if (num == 121) {
+
+      } else {
+        cout << ",";
+      }
+    }
+
+    cout << endl;
+
+    k = 0;
+
+  } while (num != 121);
+  return 0;
+}
